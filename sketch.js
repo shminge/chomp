@@ -3,8 +3,8 @@ let chocArray = []
 
 function setup() {
 	let s = getURLParams()
-	width = s.width ? size.width : 5
-	height = s.height ? size.height : 4
+	width = s.width ? s.width : 5
+	height = s.height ? s.height : 4
 	sideLength = 590/max(width, height)
 	for (let i = 0; i < height; i++){
 		chocArray.push([])
